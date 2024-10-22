@@ -1,0 +1,81 @@
+/* Basic styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.go-back-btn {
+    background-color: #5856d6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover {
+    background-color: #43429c;
+}
+
+/* Checkmark animation */
+.checkmark {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.checkmark-circle {
+    stroke: #4CAF50;
+    stroke-width: 2;
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-linecap: round;
+    animation: draw-circle 0.6s ease-in-out forwards;
+}
+
+.checkmark-check {
+    stroke: #4CAF50;
+    stroke-width: 2;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke-linecap: round;
+    animation: draw-check 0.3s 0.7s ease-in-out forwards;
+}
+
+@keyframes draw-circle {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-check {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
